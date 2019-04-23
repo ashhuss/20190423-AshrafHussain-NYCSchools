@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NYC Schools</string>
+    <string name="data_loaded">Data Loaded</string>
+    <string name="sth_wrong">Sth wrong!</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="sat_test_takers">SAT Test Takers :</string>
+    <string name="reading">Reading</string>
+    <string name="writing">Writing</string>
+    <string name="maths">Maths</string>
+</resources>

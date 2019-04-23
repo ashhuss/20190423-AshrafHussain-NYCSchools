@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_detail_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <include layout="@layout/no_internet" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_margin"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/layout_padding">
+
+                    <TextView
+                        android:id="@+id/tv_school_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/layout_margin"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/medium_size_text"
+                        android:textStyle="bold"
+                        android:typeface="serif"
+                        tools:text="Nyc High School" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sat_test_takers"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="italic"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:id="@+id/tv_take_takers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/medium_size_text"
+                            android:typeface="serif"
+                            tools:text="29" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:text="Average Scores"
+                        android:textColor="@color/colorSecondaryText"
+                        android:textSize="@dimen/medium_size_text"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="@dimen/layout_margin"
+                        android:layout_marginBottom="@dimen/layout_margin"
+                        android:background="@color/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reading"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="italic"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/writing"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="italic"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/maths"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/medium_size_text"
+                            android:textStyle="italic"
+                            android:typeface="serif" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_reading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/margin_medium"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/medium_size_text"
+                            android:typeface="serif"
+                            tools:text="229" />
+
+                        <TextView
+                            android:id="@+id/tv_writing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/medium_size_text"
+                            android:typeface="serif"
+                            tools:text="333" />
+
+                        <TextView
+                            android:id="@+id/tv_maths"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/margin_medium"
+                            android:textColor="@color/colorSecondaryText"
+                            android:textSize="@dimen/medium_size_text"
+                            android:typeface="serif"
+                            tools:text="222" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
